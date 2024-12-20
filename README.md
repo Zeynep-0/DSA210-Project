@@ -10,3 +10,9 @@ First I will get my [Google Photos](https://photos.google.com/) data from the [G
 
 ## Motivation
 I want to see if there is any relation between a photo's color and the month it was taken in my life. I want to figure out if there are any prominent colors related to each month and if there is a shift through the years. I also want to see if there are any trends in the amount of photos taken between months and years. Ultimately, my main motivation is that I find colors interesting and this project allows me to explore them while learning more about my gallery. 
+
+# DSA210-Project
+This project is for DSA210 Introduction to Data Science class. I have analyzed my photo gallery for this project.
+
+## Data Processing
+I got my [Google Photos](https://photos.google.com/) data from the [Google takeout]( https://takeout.google) service and also directly from my phones memory. Then I manually categorized the photos by the year and month they were taken. I also disregarded screenshots due to their mostly white color affecting the results and I do not think they accurately display the specified time periods color theme.
