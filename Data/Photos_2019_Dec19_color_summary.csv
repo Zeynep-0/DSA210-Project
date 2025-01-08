@@ -1,0 +1,11 @@
+"Color (R, G, B)",Count
+"(np.int64(43), np.int64(44), np.int64(73))",47
+"(np.int64(121), np.int64(120), np.int64(120))",40
+"(np.int64(203), np.int64(211), np.int64(216))",38
+"(np.int64(184), np.int64(185), np.int64(184))",34
+"(np.int64(15), np.int64(17), np.int64(31))",29
+"(np.int64(74), np.int64(99), np.int64(126))",18
+"(np.int64(126), np.int64(60), np.int64(46))",17
+"(np.int64(248), np.int64(248), np.int64(248))",14
+"(np.int64(77), np.int64(66), np.int64(66))",13
+"(np.int64(166), np.int64(167), np.int64(171))",13
