@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-71c5f69cd3ac4a6e96e5aa0a4f785032"
+  },
+  "datasets": {
+    "data-71c5f69cd3ac4a6e96e5aa0a4f785032": [
+      {
+        "colors": [
+          113,
+          99,
+          82
+        ],
+        "counts": 27541,
+        "labels": "1st"
+      },
+      {
+        "colors": [
+          38,
+          32,
+          29
+        ],
+        "counts": 26779,
+        "labels": "2nd"
+      },
+      {
+        "colors": [
+          163,
+          154,
+          139
+        ],
+        "counts": 22191,
+        "labels": "3rd"
+      },
+      {
+        "colors": [
+          191,
+          194,
+          189
+        ],
+        "counts": 14736,
+        "labels": "4th"
+      },
+      {
+        "colors": [
+          226,
+          230,
+          230
+        ],
+        "counts": 8476,
+        "labels": "5th"
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "labels",
+      "scale": {
+        "domain": [
+          "1st",
+          "2nd",
+          "3rd",
+          "4th",
+          "5th"
+        ],
+        "range": [
+          "rgb(113, 99, 82)",
+          "rgb(38, 32, 29)",
+          "rgb(163, 154, 139)",
+          "rgb(191, 194, 189)",
+          "rgb(226, 230, 230)"
+        ]
+      },
+      "type": "nominal"
+    },
+    "theta": {
+      "field": "counts",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "labels",
+        "type": "nominal"
+      },
+      {
+        "field": "counts",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc"
+  },
+  "title": "Pie Chart Example"
+}
