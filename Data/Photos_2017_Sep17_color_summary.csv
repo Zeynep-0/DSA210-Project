@@ -1,11 +1,11 @@
-"Color (R, G, B)",Count
-"(np.int64(101), np.int64(81), np.int64(75))",313
-"(np.int64(39), np.int64(35), np.int64(36))",265
-"(np.int64(155), np.int64(134), np.int64(127))",214
-"(np.int64(0), np.int64(0), np.int64(0))",153
-"(np.int64(134), np.int64(141), np.int64(172))",122
-"(np.int64(177), np.int64(211), np.int64(226))",100
-"(np.int64(236), np.int64(245), np.int64(249))",93
-"(np.int64(216), np.int64(186), np.int64(206))",79
-"(np.int64(186), np.int64(186), np.int64(186))",46
-"(np.int64(156), np.int64(145), np.int64(193))",31
+Color (R, G, B),Count
+(np.int64(101), np.int64(81), np.int64(75)),277
+(np.int64(155), np.int64(134), np.int64(127)),214
+(np.int64(0), np.int64(0), np.int64(0)),153
+(np.int64(19), np.int64(16), np.int64(41)),152
+(np.int64(134), np.int64(141), np.int64(172)),123
+(np.int64(39), np.int64(35), np.int64(36)),109
+(np.int64(177), np.int64(211), np.int64(226)),101
+(np.int64(236), np.int64(245), np.int64(249)),93
+(np.int64(216), np.int64(186), np.int64(206)),79
+(np.int64(186), np.int64(186), np.int64(186)),46
