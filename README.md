@@ -1,6 +1,6 @@
 # DSA210-Project
 ## Data Set
-I will use **my photo gallery** as my dataset. I will get the photos from my [Google Photos](https://photos.google.com/) account. If needed I may also get it directly from my phone's memory. Google photos gives time and location metadata.
+I used **my photo gallery** as my dataset. I got the photos from my [Google Photos](https://photos.google.com/) account. I also got some of them directly from my phone's memory.
 
 ## Project Idea
 I will analyze the **color palette** and **frequency** of the photos taken each month through the years. I'm also planning to include location information if I can get enough photos's location data. 
