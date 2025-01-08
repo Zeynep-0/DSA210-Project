@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-222ebd012c028c6264943df691b89b6c"
+  },
+  "datasets": {
+    "data-222ebd012c028c6264943df691b89b6c": [
+      {
+        "colors": [
+          179,
+          177,
+          174
+        ],
+        "counts": 1214,
+        "labels": "1st"
+      },
+      {
+        "colors": [
+          44,
+          39,
+          34
+        ],
+        "counts": 999,
+        "labels": "2nd"
+      },
+      {
+        "colors": [
+          96,
+          84,
+          79
+        ],
+        "counts": 838,
+        "labels": "3rd"
+      },
+      {
+        "colors": [
+          157,
+          128,
+          111
+        ],
+        "counts": 486,
+        "labels": "4th"
+      },
+      {
+        "colors": [
+          229,
+          228,
+          222
+        ],
+        "counts": 425,
+        "labels": "5th"
+      },
+      {
+        "colors": [
+          188,
+          188,
+          188
+        ],
+        "counts": 196,
+        "labels": "6th"
+      },
+      {
+        "colors": [
+          135,
+          137,
+          136
+        ],
+        "counts": 164,
+        "labels": "7th"
+      },
+      {
+        "colors": [
+          54,
+          59,
+          52
+        ],
+        "counts": 120,
+        "labels": "8th"
+      },
+      {
+        "colors": [
+          210,
+          211,
+          207
+        ],
+        "counts": 112,
+        "labels": "9th"
+      },
+      {
+        "colors": [
+          53,
+          56,
+          59
+        ],
+        "counts": 104,
+        "labels": "10th"
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "labels",
+      "scale": {
+        "domain": [
+          "1st",
+          "2nd",
+          "3rd",
+          "4th",
+          "5th",
+          "6th",
+          "7th",
+          "8th",
+          "9th",
+          "10th"
+        ],
+        "range": [
+          "rgb(179, 177, 174)",
+          "rgb(44, 39, 34)",
+          "rgb(96, 84, 79)",
+          "rgb(157, 128, 111)",
+          "rgb(229, 228, 222)",
+          "rgb(188, 188, 188)",
+          "rgb(135, 137, 136)",
+          "rgb(54, 59, 52)",
+          "rgb(210, 211, 207)",
+          "rgb(53, 56, 59)"
+        ]
+      },
+      "type": "nominal"
+    },
+    "theta": {
+      "field": "counts",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "labels",
+        "type": "nominal"
+      },
+      {
+        "field": "counts",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc"
+  },
+  "title": "Pie Chart Example"
+}
