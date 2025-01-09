@@ -432,18 +432,7 @@ b, strong {
 .contact-form .form-control:hover, .contact-form .form-control:focus {
   border-color: #ffc200;
 }
-.contact-form .submit-btn {
-  background: #ffc200;
-  border-radius: 50px;
-  color: #ffffff;
-  font-weight: bold;
-  border: 0;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.contact-form .submit-btn:hover {
-  background: #474559;
-}
+
 
 .contact-info {
   background: #474559;
@@ -455,14 +444,9 @@ b, strong {
   color: #f7f3f3;
 }
 
-.social-links .uil {
-  color: #f7f3f3;
-  font-size: 20px;
-  display: block;
-  margin: 5px 0;
-}
-.social-links .uil:hover {
-  color: #ffc200;
+.readme {
+  position: relative;
+  padding: 22px 0;
 }
 
 @media (min-width: 1270px) {
