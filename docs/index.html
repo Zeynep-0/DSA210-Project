@@ -227,7 +227,7 @@ https://www.tooplate.com/view/2115-marvel
 
                         <div class="item">
                           <div class="project-info">
-                            <iframe src="graphst/19.html" width="100%" height="600px"></iframe>
+                            <iframe src="graphs/19.html" width="100%" height="600px"></iframe>
                           </div>
                         </div>
                       
@@ -433,23 +433,43 @@ https://www.tooplate.com/view/2115-marvel
         <div class="row">
           
           <div class="col-lg-5 mr-lg-5 col-12">
-            
 
-            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
-                <div class="contact-info-item">
-                  <h3 class="mb-3 text-white">Say hello</h3>
-                  
-                </div>
+        <h1>DSA210-Project</h1>
+        <p>This project is for DSA210 Introduction to Data Science class. I have analyzed my photo gallery for this project.</p>
+   
+        <h2>Motivation</h2>
+        <p>I wanted to see if there was any relation between a photo's color and the month it was taken in my life. I want to figure out if there are any prominent colors related to each month and if there is a shift through the years. I also wanted to see if there were any trends in the amount of photos taken between months and years. Ultimately, my main motivation was that I find colors interesting and this project allows me to explore them while learning more about my gallery and photo taking habits.</p>
+    
+        <h2>Data Set</h2>
+        <p>I used <strong>my photo gallery</strong> as my dataset. I got the photos from my <a href="https://photos.google.com/" target="_blank">Google Photos</a> account. I also got some of them directly from my phone's memory.</p>
+    
+        <h2>Data Pre-Processing</h2>
+        <p>First I manually categorized the photos by the year and month they were taken. I also disregarded screenshots due to their mostly white color affecting the results. Then I wrote a python script to get when each photo was taken by processing each photo's JSON files that Google Takeout provides alongside the photos themselves.</p>
+   
+        <h2>Data Processing</h2>
+        <h3>Dominant Color Analysis</h3>
+        <p>I used kMeans clustering to get each photo's 5 most dominant colors. I decided the k value by checking different ones and comparing the results. Then after I processed each month, I merged similar colors by setting a threshold between the RGB distances of two colors, and if they are closer than said threshold, I combined them. I also decided on the threshold after running the program with different ones and seeing their accuracy. I used a smaller batch of photos to test my program's accuracy visually also. I had over 16,000 photos so I used threads to speed up the process of extracting colors. I also resized images for the same reason. After processing each month, I got the top 10 most common colors and created a CSV file to store the values. I also stored all years combined data in a JSON file for visualization.</p>
 
-             
-            </div>
-          </div>
+        <h3>Photo Taken Time</h3>
+        <p>Since I directly got the photo's times from Google, I just collected the data in a JSON file. I checked for the most common hour I took by turning Unix time to standard time and also adding a timezone to be accurate with time.</p>
+    
+        <h2>Data Visualization</h2>
+        <p><a href="https://zeynep-0.github.io/DSA210-Project/index.html#" target="_blank">My website for charts and findings but prettier</a></p>
 
-          <div class="col-lg-6 col-12">
-            <div class="contact-form">
-              <h2 class="mb-4">Findings.</h2>
-            </div>
-          </div>
+        <h3>Dominant Color Analysis</h3>
+        <p>For visualization of each year's top 10 most common colors, I got each CSV file related to each year and combined every month of that year. Then I used the above-mentioned method of merging colors and merged them. Then I used Altair to visualize an interactive bar chart to show the count of each color and their RGB. I used Altair to visualize a bar chart to see how each month changed through the years and the count of each color. I also did the reverse and looked at each year's months again using Altair to visualize a bar chart.</p>
+
+        <h3>Photo Taken Time</h3>
+        <p>I created a scatter plot to show the hours each photo was taken in each month, again using Altair to plot it. I also looked at each year generally using a scatter plot.</p>
+  
+        <h2>Findings</h2>
+        <p>Unfortunately, I couldn't find any overarching trends about dominant colors and their relations with years and different months. But finding out there isn't any one big color palette in a year or season allowed me to see how different each month can be.</p>
+        <p>I found out that I like to take my photos at night since the most common 5 hours were between 16-21 o'clock. I found out that the number of photos I took significantly decreased around the university exam period and slowly got back to how it was.</p>
+  
+        <h2>Limitations</h2>
+        <p>I couldn't get the 2022 photos' taken times so it was quite a gap in understanding the photo-taking habits. Also, I would've liked to get the location of these photos to create a map with it. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data can be done as well. I plan to work on this project to take it to the best state it can get with what I know.</p>
+  
+
 
         </div>
       </div>
