@@ -10,7 +10,7 @@ I used **my photo gallery** as my dataset. I got the photos from my [Google Phot
 ## Data Pre-Processing
 First I manually categorized the photos by the year and month they were taken. I also disregarded screenshots due to their mostly white color affecting the results. Then I wrote a python script to get when each photo was taken by processing eachh photos json files that Google takeout provides alongside the photos themselves.
 
-##Data Processing
+## Data Processing
 # Dominant Color Analysis
 I used kMeans clustering to get each photos 5 most dominant colors. I decided the k value by checking different ones and comparing the results. Then afetr I processed each month I merged similar colors by setting a threshold between the rgb distances of two colors and if they are closer than said threshold I combined them. I also decided on the threshold after running the program with different ones and seeing their accuracy. I used a smallar batch of photos to test my programs accuracy visually also. I had over 16000 photos so I used threads to speed up the process of extracting colors. I also resized images for the same reason. After processing each month I got top 10 most common colors and created a csv file to store the value. I also stored all years combined data in a json file for visualization.
 
