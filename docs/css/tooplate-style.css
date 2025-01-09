@@ -75,6 +75,10 @@ h3 {
   color: #484848;
 }
 
+h4 {
+  color: #929292;
+}
+
 h3,
 b, strong {
   font-weight: bold;
