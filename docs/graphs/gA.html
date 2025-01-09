@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-bce814ac6a324402a22d0e6387495082"}, "mark": {"type": "arc"}, "encoding": {"color": {"field": "labels", "scale": {"domain": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"], "range": ["rgb(36, 35, 35)", "rgb(154, 148, 148)", "rgb(94, 85, 88)", "rgb(232, 234, 231)", "rgb(204, 197, 191)", "rgb(32, 25, 21)", "rgb(189, 179, 181)", "rgb(118, 102, 83)", "rgb(152, 131, 126)", "rgb(53, 47, 48)"]}, "type": "nominal"}, "theta": {"field": "counts", "type": "quantitative"}, "tooltip": [{"field": "labels", "type": "nominal"}, {"field": "counts", "type": "quantitative"}]}, "title": "2016-2024", "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-bce814ac6a324402a22d0e6387495082": [{"labels": "1st", "counts": 529204, "colors": [36, 35, 35]}, {"labels": "2nd", "counts": 512020, "colors": [154, 148, 148]}, {"labels": "3rd", "counts": 487141, "colors": [94, 85, 88]}, {"labels": "4th", "counts": 361472, "colors": [232, 234, 231]}, {"labels": "5th", "counts": 270499, "colors": [204, 197, 191]}, {"labels": "6th", "counts": 262953, "colors": [32, 25, 21]}, {"labels": "7th", "counts": 183875, "colors": [189, 179, 181]}, {"labels": "8th", "counts": 154735, "colors": [118, 102, 83]}, {"labels": "9th", "counts": 114016, "colors": [152, 131, 126]}, {"labels": "10th", "counts": 98661, "colors": [53, 47, 48]}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
