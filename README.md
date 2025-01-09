@@ -1,5 +1,5 @@
 # DSA210-Project
-This project is for DSA210 Introduction to Data Science class. I have analyzed my photo gallery for this project.
+This project is for DSA210 Introduction to Data Science class. I have analyzed my photo gallery for this project. [My website for this project](https://zeynep-0.github.io/DSA210-Project/index.html#)
 
 ## Motivation
 I wanted to see if there was any relation between a photo's color and the month it was taken in my life. I want to figure out if there are any prominent colors related to each month and if there is a shift through the years. I also wanted to see if there were any trends in the amount of photos taken between months and years. Ultimately, my main motivation was that I find colors interesting and this project allows me to explore them while learning more about my gallery and photo taking habits. 
@@ -18,7 +18,7 @@ I used kMeans clustering to get each photos 5 most dominant colors. I decided th
 Since I directly got the photo's times from the google I just collected the data in a json file. I checked for thr most common hour I took by turning unix time to standard time and also adding timezone to be accurate with time.
 
 ## Data Visualization
-[My website for charts also findings but prettier](https://zeynep-0.github.io/DSA210-Project/index.html#)
+
 ### Dominant Color Analysis
 For visualization of each years top 10 most common colors. I got each csv file related to each year and combined every month of that year. Then I used the above mentioned method of merging colors and merged them. Then I used altair to visualize an interactive bar chart to show count of each color and their rbg. I used altair to visualize a bar chart to see how each month changed through the years and the count of each color. I also did the reverse and looked at each years months again using altair to visualize a bar chart.
 
