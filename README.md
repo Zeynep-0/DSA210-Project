@@ -25,6 +25,7 @@ This project is for the **DSA210 Introduction to Data Science** class. I analyze
 I wanted to explore potential relationships between a photo's dominant colors and the month it was taken. Specifically, I wanted to identify any prominent colors associated with each month and observe if there are any trends over the years. Additionally, I tried to uncover trends in the number of photos taken across different months and years. Ultimately, my primary motivation rooted from the fact that I find colors interesting. This project allowed me to explore this interest while gaining insights into my photo gallery and photography habits.
 
 
+
 ## Data Set
 I used **my photo gallery** as the dataset, with photos sourced from:
 - [Google Photos](https://photos.google.com/)
