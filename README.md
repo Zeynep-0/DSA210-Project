@@ -4,7 +4,21 @@
 ## About the Project
 This project is for the **DSA210 Introduction to Data Science** class. I analyzed my photo gallery from 2016 to 2024 to uncover patterns and trends in my photography habits.[My website for this project](https://zeynep-0.github.io/DSA210-Project/index.html#)
 
+## Table of Contents
 
+- [About the Project](#about-the-project)
+- [Motivation](#motivation)
+- [Data Set](#data-set)
+- [Data Pre-Processing](#data-pre-processing)
+- [Data Processing](#data-processing)
+  - [Dominant Color Analysis](#dominant-color-analysis)
+  - [Photo Taken Time](#photo-taken-time)
+  - [Photo Count](#photo-count)
+- [Data Visualization](#data-visualization)
+  - [Dominant Color Analysis](#dominant-color-analysis-1)
+  - [Photo Taken Time](#photo-taken-time-1)
+  - [Photo Count](#photo-count-1)
+- [Limitations](#limitations)
 
 ## Motivation
 I wanted to see if there was any relation between a photo's color and the month it was taken in my life. I want to figure out if there are any prominent colors related to each month and if there is a shift through the years. I also wanted to see if there were any trends in the amount of photos taken between months and years. Ultimately, my main motivation was that I find colors interesting and this project allows me to explore them while learning more about my gallery and photo taking habits.
