@@ -2,7 +2,7 @@
 # Photo Gallery Analysis Project
 
 ## About the Project
-This project is for the **DSA210 Introduction to Data Science** class. I analyzed my photo gallery from 2016 to 2024 to uncover patterns and trends in my photography habits. My website for this project is [here](https://zeynep-0.github.io/DSA210-Project/index.html#)
+This project is for the **DSA210 Introduction to Data Science** class. I analyzed my photo gallery from 2016 to 2024 to uncover patterns and trends in my photography habits. [My website for this project is here](https://zeynep-0.github.io/DSA210-Project/index.html#)
 
 ## Table of Contents
 
