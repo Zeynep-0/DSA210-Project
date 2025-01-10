@@ -17,6 +17,7 @@ This project is for the **DSA210 Introduction to Data Science** class. I analyze
   - [Dominant Color Analysis](#dominant-color-analysis-1)
   - [Photo Taken Time](#photo-taken-time-1)
   - [Photo Count](#photo-count-1)
+- [Findings](#findings)
 - [Limitations](#limitations)
 
 ## Motivation
@@ -74,7 +75,6 @@ For visualizing the top 10 most common colors for each year, I processed the CSV
 
 I initially considered using Plotly for these visualizations but faced issues embedding Plotly graphs as HTML files into the website. 
 
-
 ### Photo Taken Time
 - Created a [Scatter Plot] with Altair to show photo-taking hours by month.
 - Added a dropdown menu to view year-specific data.
@@ -82,6 +82,10 @@ I initially considered using Plotly for these visualizations but faced issues em
 ### Photo Count
 - Created a [Scatter Plot] with Altair to depict yearly photo counts across months.
 - Added a dropdown menu to examine month-specific trends.
+
+## Findings
+
+I found out that I like to take my photos at night since the most common 5 hours were between 16-21 o'clock. I found out that the number of photos I took significantly decreased around the university exam period and slowly got back to how it was.
 
 
 ## Limitations
