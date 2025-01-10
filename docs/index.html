@@ -275,7 +275,7 @@ https://www.tooplate.com/view/2115-marvel
 
     
     <!-- FEATURES -->
-    <section class="resume py-5 d-lg-flex justify-content-center align-items-center">
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="pie">
         <div class="container">
             <div class="row">
 
@@ -400,9 +400,11 @@ https://www.tooplate.com/view/2115-marvel
         <iframe src="graphs/photo_taken_times_months.html" width="1050px" height="920px"></iframe>
           <p><strong>Hours when photos were taken across all years, visualized as a scatter plot.</strong></p>
           <p></p>
+        <div id=id="resume2">
         <iframe src="graphs/photo_count_sc.html" width="1000px" height="550px"></iframe>
           <p><strong>Taken photo count of each year visualized as a scatter chart.</strong></p>
           <p></p>
+        </div>
         </div>
       </div>
     </div>
@@ -460,11 +462,14 @@ https://www.tooplate.com/view/2115-marvel
                   <h3>Data Visualization</h3>
           
                   <h4>Dominant Color Analysis</h4>
-                  <p>For visualization of each year's top 10 most common colors, I got each CSV file related to each year and combined every month of that year. Then I used the above-mentioned method of merging colors and merged them. Then I used Altair to visualize an interactive  <a href="#resume">pie chart </a>to show the count of each color and their RGB. I used Altair to visualize <a href="#project">a bar chart</a> to see how each month changed through the years and the count of each color. I also did the reverse and looked at each year's months again using Altair to visualize <a href="#project2">a bar chart</a>.</p>
+                  <p>For visualization of each year's top 10 most common colors, I got each CSV file related to each year and combined every month of that year. Then I used the above-mentioned method of merging colors and merged them. Then I used Altair to visualize an interactive  <a href="#pie">pie chart </a>to show the count of each color and their RGB. I used Altair to visualize <a href="#project">a bar chart</a> to see how each month changed through the years and the count of each color. I also did the reverse and looked at each year's months again using Altair to visualize <a href="#project2">a bar chart</a>.</p>
           
                   <h4>Photo Taken Time</h4>
-                  <p>I created a scatter plot to show the hours each photo was taken in each month, again using Altair to plot it. I also looked at each year generally using a scatter plot.</p>
-            
+                  <p>I created <a href="#resume">a scatter plot</a> to show the hours each photo was taken in each month, again using Altair to plot it. I also looked at each year individually.</p>
+
+                  <h4>Photo Count</h4>
+                  <p>I created <a href="#resume2">a scatter plot</a> to show photo count of year through the months, used Altair to plot it. I also looked at each month individually.</p>
+
                   <h3>Limitations</h3>
                   <p>I couldn't get the 2022 photos' taken times so it was quite a gap in understanding the photo-taking habits. Also, I would've liked to get the location of these photos to create a map with it. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data can be done as well. I plan to work on this project to take it to the best state it can get with what I know.</p>
          
