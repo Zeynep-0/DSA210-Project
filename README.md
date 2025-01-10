@@ -6,7 +6,6 @@ This project is for the **DSA210 Introduction to Data Science** class. I analyze
 
 ## Table of Contents
 
-- [About the Project](#about-the-project)
 - [Motivation](#motivation)
 - [Data Set](#data-set)
 - [Data Pre-Processing](#data-pre-processing)
