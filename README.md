@@ -35,7 +35,7 @@ I used **my photo gallery** as the dataset, with photos sourced from:
 ## Data Pre-Processing
 1. **Manual Categorization**:
    - Organized photos by year and month.
-   - Excluded screenshots due to their mostly white color skewing the results.
+   - Excluded screenshots due to their mostly white color effecting the results.
    - Created a Word document summarizing monthly photo counts for each year.
 2. **Python Script**:
    - Extracted photo metadata (photo taken time) from JSON files provided by Google Takeout.
@@ -46,10 +46,10 @@ I used **my photo gallery** as the dataset, with photos sourced from:
 ### Dominant Color Analysis
 - **Method**:
   - Used **kMeans clustering** to identify the top 5 dominant colors in each photo.
-  - Determined the `k` value by experimenting with different settings and comparing results.
+  - Determined the `k` value by experimenting with different values and comparing results.
 - **Color Merging**:
   - Merged similar colors based on an RGB distance threshold.
-  - Determined the threshold through iterative testing.
+  - Determined the threshold through iteratively testing.
 - **Optimization**:
   - Processed over 16,000 photos using threads to speed up the color extraction.
   - Resized images for faster processing.
@@ -58,12 +58,12 @@ I used **my photo gallery** as the dataset, with photos sourced from:
 
 ### Photo Taken Time
 - Extracted timestamps from Google metadata.
-- Converted Unix time to standard time and included timezone adjustments.
+- Converted Unix time to standard time and included the timezone difference.
 - Stored data in a JSON file to analyze the most common hours for photo-taking.
 
 ### Photo Count
 - Compiled monthly photo counts for each year into a CSV file using Excel.
-- Calculated the average number of photos taken per month manually.
+- Manually calculated the average number of photos taken per month.
 
 ## Data Visualization
 
@@ -71,32 +71,32 @@ I used **my photo gallery** as the dataset, with photos sourced from:
 For visualizing the top 10 most common colors for each year, I processed the CSV files containing monthly color data and combined them into yearly datasets. After merging similar colors using an RGB distance threshold, I created visualizations using **Altair**:
 
 - **Interactive Pie Chart**: Displays the count of each color along with their RGB values.
-- **Bar Chart**: Shows how the top colors for each month evolved over the years.
-- **Bar Chart**: Analyzes the distribution of yearly color data across all months.
+- **Bar Chart**: Shows how the top colors for each month chanaged over the years.
+- **Bar Chart**: Analyzes the distribution of every years color data across all months.
 
-I initially considered using Plotly for these visualizations but faced issues embedding Plotly graphs as HTML files into the website. 
+I initially considered using Plotly for these visualizations but coudn't able to embed Plotly graphs as HTML files into the website. 
 
 ### Photo Taken Time
-- Created a [Scatter Plot] with Altair to show photo-taking hours by month.
-- Added a dropdown menu to view year-specific data.
+- Created a [Scatter Plot] with Altair to show which hours photos were taken each month.
+- Added a dropdown menu to view the year specific data.
 
 ### Photo Count
-- Created a [Scatter Plot] with Altair to depict yearly photo counts across months.
-- Added a dropdown menu to examine month-specific trends.
+- Created a [Scatter Plot] with Altair to show yearly photo counts across months.
+- Added a dropdown menu to examine month specific trends.
 
 ## Findings
 ### Dominant Color Analysis
 
-The most common color in all of my 16000 photos is brown which is understandable since almost every month had some shade of brown in it. I didn't anticipated every year having its own color pallete it was suprising. There were couple unique colors in every year:
-- Pink in: 2016
-- Blues in: 2019
-- Greens in: 2022.
+The most common color in all of my 16000 photos is brown which is understandable since almost every month had some shade of brown in it. I didn't anticipate every year having its own color pallete, it was suprising. There were couple unique colors in most years, some examples:
+                  
+- 2016: Pink<
+- 2019: Blue
+- 2022: Green
   
-2020 had it's own color pallette. It's colors were mostly due to the month of March which is the month I had a trip to Europe and I took a bunch of photos.
+2020 had a quite different color pallette. It's colors were mostly due to the month of March which is the month I had a trip to Europe and I took a lot of photos.
 As for any trend regarding season I couldn't observe any except the month of May having 3 years with very green color pallettes: 2017, 2018 and 2022. There was also some greens in 2021 as well. 2021's January was an outlier compared to other months in 2021 which is the result of taking over 20 photos for my birthday celebration.
 
-There were a lot of greens and blues all through the months and years which was kind of expected with the amount of nature and sky photos I like to take
-Comparing the bar charts with the photos themselves led me to realize the sheer amount of repetitive photos I take of things and how they effect the color results.
+There were a lot of greens and blues all through the months and years which was kind of expected with the amount of nature and sky photos I like to take. Comparing the bar charts with the photos themselves led me to realize the sheer amount of repetitive photos I take of things and how they effect the color results.
                   
 
 ### Photo Taken Time
@@ -113,7 +113,6 @@ In 2020 and 2024, there was an increase in photos taken late at night (between 1
 
 ### Photo Count
 I also found out that the number of photos I took significantly decreased around the start of COVID (end of 2020) and continued to be low during the university exam period (2022-2023). They slowly got back to how they were especially with starting the university (September 2023). The outlier month regarding the photo count was March 2020 since I took a trip to Europe that month and took in total 1006 photos in a month.
-
 
 
 ## Limitations 
