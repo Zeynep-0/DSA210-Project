@@ -119,4 +119,4 @@ I also found out that the number of photos I took significantly decreased around
 I couldn't get the 2022 photos' taken times so there is a gap in understanding the photo-taking habits. I would've liked to get the location of these photos to create a map with it but I couldn't get this data. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data to find more observations can be done as well.
 
 ## Future Plans
-I plan to work on this project to improve the website and do more analysis of the results.
+I plan to work on this project to improve the website, do more data exploration and do more analysis of the results.
