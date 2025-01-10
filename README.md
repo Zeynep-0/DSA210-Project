@@ -87,6 +87,17 @@ I initially considered using Plotly for these visualizations but faced issues em
 ## Findings
 ### Dominant Color Analysis
 
+The most common color in all of my 16000 photos is brown which is understandible since almost every month had some shade of brown in it. I didn't anticipated every year having its own color pallete it was suprising. There were couple unique colors in every year:
+- Pink in: 2016
+- Blues in: 2019
+- Greens in: 2022.
+  
+2020 had it's own color pallette. It's colors were mostly due to the month of March which is the month I had a trip to Europe and I took a bunch of photos.
+As for any trend regarding season I coudn't observe any except the month of May having 3 years with very green color pallettes: 2017, 2018 and 2022. There was also some greens in 2021 as well. 2021's January was an outlier compared to other months in 2021 which is the result of taking over 20 photos for my birthday celebration.
+
+There were a lot of greens and blues all through the months and years which was kind of expected with the amount of nature and sky photos I like to take
+Comparing the bar charts with the photos themselves led me to realise the sheer amount of repetitive photos I take of things and how they effect the color results.
+                  
 
 ### Photo Taken Time
 
