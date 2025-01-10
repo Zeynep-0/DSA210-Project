@@ -18,10 +18,11 @@ This project is for the **DSA210 Introduction to Data Science** class. I analyze
   - [Photo Taken Time](#photo-taken-time-1)
   - [Photo Count](#photo-count-1)
 - [Findings](#findings)
-- [Limitations and Future Work](#limitations-and-future-work)
+- [Limitations](#limitations)
+- [Future Plans](#future-plans)
 
 ## Motivation
-I wanted to see if there was any relation between a photo's color and the month it was taken in my life. I want to figure out if there are any prominent colors related to each month and if there is a shift through the years. I also wanted to see if there were any trends in the amount of photos taken between months and years. Ultimately, my main motivation was that I find colors interesting and this project allows me to explore them while learning more about my gallery and photo taking habits.
+I wanted to explore potential relationships between a photo's dominant colors and the month it was taken. Specifically, I wanted to identify any prominent colors associated with each month and observe if there are any trends over the years. Additionally, I tried to uncover trends in the number of photos taken across different months and years. Ultimately, my primary motivation stemmed from the fact that I find colors interesting. This project allowed me to delve into this interest while gaining insights into my photo gallery and photography habits.
 
 
 
@@ -85,20 +86,27 @@ I initially considered using Plotly for these visualizations but faced issues em
 
 ## Findings
 ### Dominant Color Analysis
+
+
 ### Photo Taken Time
 
-I found out that I like to take my photos at night since the most common 5 hours were the photos were taken were:
+I discovered that I prefer taking photos at night, as the five most common hours for photo-taking were:
 - 21:00 with 1415 occurrences.
 - 18:00 with 1213 occurrences.
 - 20:00 with 1141 occurrences.
 - 17:00 with 1130 occurrences.
 - 16:00 with 1098 occurrences.
 
-Also in 2020 and 2024 from April to July there is an increase at the late night (0-4) photo's taken. The 2020 is posibbly due to covid affecting my sleep schedule and 2024 is more so due to the midterm exams preperation since I like to study late into the night.
+In both 2020 and 2024, there was an increase in photos taken late at night (between 12 AM and 4 AM) from April to July. Looking at my photos in 2020, this was likely due to COVID affecting my sleep schedule, while in 2024, it was probably because of midterm exam preparation, as I tend to study late into the night.
+
 
 ### Photo Count
-I also found out that the number of photos I took significantly decreased around the start of covid (end of 2020) and continued to be low during the university exam period (2022-2023). Slowly got back to how it was especially starting the university (September 2023). The outlier month regarding the photo count was March 2020 since I took a trip to Europe that month and took in total 1006 photos in a month.
+I also found out that the number of photos I took significantly decreased around the start of COVID (end of 2020) and continued to be low during the university exam period (2022-2023). They slowly got back to how they were especially with starting the university (September 2023). The outlier month regarding the photo count was March 2020 since I took a trip to Europe that month and took in total 1006 photos in a month.
 
 
-## Limitations and Future Plans
-I couldn't get the 2022 photos' taken times so there is a gap in understanding the photo-taking habits. Also, I would've liked to get the location of these photos to create a map with it but I coudn't get this data. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data to find more observations can be done as well. I plan to work on this project to improve the website and do more analysis of the results.
+
+## Limitations 
+I couldn't get the 2022 photos' taken times so there is a gap in understanding the photo-taking habits. I would've liked to get the location of these photos to create a map with it but I coudn't get this data. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data to find more observations can be done as well.
+
+## Future Plans
+I plan to work on this project to improve the website and do more analysis of the results.
