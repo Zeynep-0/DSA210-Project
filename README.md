@@ -18,7 +18,7 @@ This project is for the **DSA210 Introduction to Data Science** class. I analyze
   - [Photo Taken Time](#photo-taken-time-1)
   - [Photo Count](#photo-count-1)
 - [Findings](#findings)
-- [Limitations](#limitations)
+- [Limitations and Future Work](#limitations-and-future-work)
 
 ## Motivation
 I wanted to see if there was any relation between a photo's color and the month it was taken in my life. I want to figure out if there are any prominent colors related to each month and if there is a shift through the years. I also wanted to see if there were any trends in the amount of photos taken between months and years. Ultimately, my main motivation was that I find colors interesting and this project allows me to explore them while learning more about my gallery and photo taking habits.
@@ -94,11 +94,11 @@ I found out that I like to take my photos at night since the most common 5 hours
 - 17:00 with 1130 occurrences.
 - 16:00 with 1098 occurrences.
 
-Also in 2020 and 2024 from April to July there is an increase at the late night(0-4) photo's taken. The 2020 is posibbly due to covid affecting my sleep schedule and 2024 is more so due to the midterm exams preperation since I like to study late into the night.
+Also in 2020 and 2024 from April to July there is an increase at the late night (0-4) photo's taken. The 2020 is posibbly due to covid affecting my sleep schedule and 2024 is more so due to the midterm exams preperation since I like to study late into the night.
 
 ### Photo Count
-I also found out that the number of photos I took significantly decreased around the start of covid(end of 2020) and continued to be low during the university exam period (2022-2023). Slowly got back to how it was especially starting the university (September 2023). The outlier month regarding the photo count was March 2020 since I took a trip to Europe that month and took in total 1006 photos in a month.
+I also found out that the number of photos I took significantly decreased around the start of covid (end of 2020) and continued to be low during the university exam period (2022-2023). Slowly got back to how it was especially starting the university (September 2023). The outlier month regarding the photo count was March 2020 since I took a trip to Europe that month and took in total 1006 photos in a month.
 
 
-## Limitations
-I couldn't get the 2022 photos' taken times so there is a gap in understanding the photo-taking habits. Also, I would've liked to get the location of these photos to create a map with it. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data to find more observations can be done as well. I plan to work on this project to improve the website and do more analysis of the results.
+## Limitations and Future Plans
+I couldn't get the 2022 photos' taken times so there is a gap in understanding the photo-taking habits. Also, I would've liked to get the location of these photos to create a map with it but I coudn't get this data. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data to find more observations can be done as well. I plan to work on this project to improve the website and do more analysis of the results.
