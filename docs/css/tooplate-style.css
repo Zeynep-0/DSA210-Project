@@ -21,7 +21,7 @@ body {
   color: #5b5b5b;
   font-size: 18px;
   font-weight: bold;
-  
+  padding: 0;
   border-radius: 50px;
   letter-spacing: 0.2px;
 }
