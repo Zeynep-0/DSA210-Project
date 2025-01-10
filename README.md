@@ -22,8 +22,7 @@ This project is for the **DSA210 Introduction to Data Science** class. I analyze
 - [Future Plans](#future-plans)
 
 ## Motivation
-I wanted to explore potential relationships between a photo's dominant colors and the month it was taken. Specifically, I wanted to identify any prominent colors associated with each month and observe if there are any trends over the years. Additionally, I tried to uncover trends in the number of photos taken across different months and years. Ultimately, my primary motivation stemmed from the fact that I find colors interesting. This project allowed me to delve into this interest while gaining insights into my photo gallery and photography habits.
-
+I wanted to explore potential relationships between a photo's dominant colors and the month it was taken. Specifically, I wanted to identify any prominent colors associated with each month and observe if there are any trends over the years. Additionally, I tried to uncover trends in the number of photos taken across different months and years. Ultimately, my primary motivation rooted from the fact that I find colors interesting. This project allowed me to explore this interest while gaining insights into my photo gallery and photography habits.
 
 
 ## Data Set
@@ -35,10 +34,10 @@ I used **my photo gallery** as the dataset, with photos sourced from:
 ## Data Pre-Processing
 1. **Manual Categorization**:
    - Organized photos by year and month.
-   - Excluded screenshots due to their predominantly white color skewing the results.
+   - Excluded screenshots due to their mostly white color skewing the results.
    - Created a Word document summarizing monthly photo counts for each year.
 2. **Python Script**:
-   - Extracted photo metadata (e.g., photo taken time) from JSON files provided by Google Takeout.
+   - Extracted photo metadata (photo taken time) from JSON files provided by Google Takeout.
   
 
 ## Data Processing
@@ -87,16 +86,16 @@ I initially considered using Plotly for these visualizations but faced issues em
 ## Findings
 ### Dominant Color Analysis
 
-The most common color in all of my 16000 photos is brown which is understandible since almost every month had some shade of brown in it. I didn't anticipated every year having its own color pallete it was suprising. There were couple unique colors in every year:
+The most common color in all of my 16000 photos is brown which is understandable since almost every month had some shade of brown in it. I didn't anticipated every year having its own color pallete it was suprising. There were couple unique colors in every year:
 - Pink in: 2016
 - Blues in: 2019
 - Greens in: 2022.
   
 2020 had it's own color pallette. It's colors were mostly due to the month of March which is the month I had a trip to Europe and I took a bunch of photos.
-As for any trend regarding season I coudn't observe any except the month of May having 3 years with very green color pallettes: 2017, 2018 and 2022. There was also some greens in 2021 as well. 2021's January was an outlier compared to other months in 2021 which is the result of taking over 20 photos for my birthday celebration.
+As for any trend regarding season I couldn't observe any except the month of May having 3 years with very green color pallettes: 2017, 2018 and 2022. There was also some greens in 2021 as well. 2021's January was an outlier compared to other months in 2021 which is the result of taking over 20 photos for my birthday celebration.
 
 There were a lot of greens and blues all through the months and years which was kind of expected with the amount of nature and sky photos I like to take
-Comparing the bar charts with the photos themselves led me to realise the sheer amount of repetitive photos I take of things and how they effect the color results.
+Comparing the bar charts with the photos themselves led me to realize the sheer amount of repetitive photos I take of things and how they effect the color results.
                   
 
 ### Photo Taken Time
@@ -108,7 +107,7 @@ I discovered that I prefer taking photos at night, as the five most common hours
 - 17:00 with 1130 occurrences.
 - 16:00 with 1098 occurrences.
 
-In both 2020 and 2024, there was an increase in photos taken late at night (between 12 AM and 4 AM) from April to July. Looking at my photos in 2020, this was likely due to COVID affecting my sleep schedule, while in 2024, it was probably because of midterm exam preparation, as I tend to study late into the night.
+In 2020 and 2024, there was an increase in photos taken late at night (between 12 AM and 4 AM) from April to July. Looking at my photos in 2020, this was likely due to COVID affecting my sleep schedule, while in 2024, it was probably because of midterm exam preparation, as I tend to study late into the night.
 
 
 ### Photo Count
@@ -117,7 +116,7 @@ I also found out that the number of photos I took significantly decreased around
 
 
 ## Limitations 
-I couldn't get the 2022 photos' taken times so there is a gap in understanding the photo-taking habits. I would've liked to get the location of these photos to create a map with it but I coudn't get this data. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data to find more observations can be done as well.
+I couldn't get the 2022 photos' taken times so there is a gap in understanding the photo-taking habits. I would've liked to get the location of these photos to create a map with it but I couldn't get this data. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data to find more observations can be done as well.
 
 ## Future Plans
 I plan to work on this project to improve the website and do more analysis of the results.
