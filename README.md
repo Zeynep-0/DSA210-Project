@@ -86,13 +86,15 @@ I initially considered using Plotly for these visualizations but faced issues em
 ## Findings
 ### Dominant Color Analysis
 ### Photo Taken Time
+
 I found out that I like to take my photos at night since the most common 5 hours were the photos were taken were:
--21:00 with 1415 occurrences.
--18:00 with 1213 occurrences.
--20:00 with 1141 occurrences.
--17:00 with 1130 occurrences.
--16:00 with 1098 occurrences. 
+- 21:00 with 1415 occurrences.
+- 18:00 with 1213 occurrences.
+- 20:00 with 1141 occurrences.
+- 17:00 with 1130 occurrences.
+- 16:00 with 1098 occurrences. 
 Also in 2020 and 2024 from April to July there is an increase at the late night(0-4) photo's taken. The 2020 is posibbly due to covid affecting my sleep schedule and 2024 is more so due to the midterm exams preperation since I like to study late into the night.
+
 ### Photo Count
 I also found out that the number of photos I took significantly decreased around the start of covid(end of 2020) and continued to be low during the university exam period (2022-2023). Slowly got back to how it was especially starting the university (September 2023). The outlier month regarding the photo count was March 2020 since I took a trip to Europe that month and took in total 1006 photos in a month.
 
