@@ -92,7 +92,8 @@ I found out that I like to take my photos at night since the most common 5 hours
 - 18:00 with 1213 occurrences.
 - 20:00 with 1141 occurrences.
 - 17:00 with 1130 occurrences.
-- 16:00 with 1098 occurrences. 
+- 16:00 with 1098 occurrences.
+
 Also in 2020 and 2024 from April to July there is an increase at the late night(0-4) photo's taken. The 2020 is posibbly due to covid affecting my sleep schedule and 2024 is more so due to the midterm exams preperation since I like to study late into the night.
 
 ### Photo Count
