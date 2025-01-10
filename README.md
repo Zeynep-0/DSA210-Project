@@ -85,4 +85,4 @@ I initially considered using Plotly for these visualizations but faced issues em
 
 
 ## Limitations
-I couldn't get the 2022 photos' taken times so it was quite a gap in understanding the photo-taking habits. Also, I would've liked to get the location of these photos to create a map with it. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data to find more observations can be done as well. I plan to work on this project to improve the website and do more analysis of the results.
+I couldn't get the 2022 photos' taken times so there is a gap in understanding the photo-taking habits. Also, I would've liked to get the location of these photos to create a map with it. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data to find more observations can be done as well. I plan to work on this project to improve the website and do more analysis of the results.
