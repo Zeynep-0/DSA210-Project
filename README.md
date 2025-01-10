@@ -89,7 +89,7 @@ I initially considered using Plotly for these visualizations but coudn't able to
 
 The most common color in all of my 16000 photos is brown which is understandable since almost every month had some shade of brown in it. I didn't anticipate every year having its own color pallete, it was suprising. There were couple unique colors in most years, some examples:
                   
-- 2016: Pink<
+- 2016: Pink
 - 2019: Blue
 - 2022: Green
   
