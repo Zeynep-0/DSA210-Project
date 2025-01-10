@@ -1,5 +1,6 @@
 # DSA210-Project
-This project is for DSA210 Introduction to Data Science class. I have analyzed my photo gallery for this project. [My website for this project](https://zeynep-0.github.io/DSA210-Project/index.html#)
+This project is for DSA210 Introduction to Data Science class. I have analyzed my photo gallery for this project. 
+[My website for this project](https://zeynep-0.github.io/DSA210-Project/index.html#)
 
 ## Motivation
 I wanted to see if there was any relation between a photo's color and the month it was taken in my life. I want to figure out if there are any prominent colors related to each month and if there is a shift through the years. I also wanted to see if there were any trends in the amount of photos taken between months and years. Ultimately, my main motivation was that I find colors interesting and this project allows me to explore them while learning more about my gallery and photo taking habits. 
