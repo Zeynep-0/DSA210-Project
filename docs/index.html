@@ -426,27 +426,27 @@ https://www.tooplate.com/view/2115-marvel
                   <p>This project is for DSA210 Introduction to Data Science class. I analyzed my photo gallery from 2016 to 2024 to uncover patterns and trends in my photography habits.</p>
              
                   <h3>Motivation</h3>
-                  <p>I wanted to explore potential relationships between a photo's dominant colors and the month it was taken. Specifically, I wanted to identify any prominent colors associated with each month and observe if there are any trends over the years. Additionally, I tried to uncover trends in the number of photos taken across different months and years. Ultimately, my primary motivation stemmed from the fact that I find colors interesting. This project allowed me to delve into this interest while gaining insights into my photo gallery and photography habits.</p>
+                  <p>I wanted to explore potential relationships between a photo's dominant colors and the month it was taken. Specifically, I wanted to identify any prominent colors associated with each month and observe if there are any trends over the years. Additionally, I tried to uncover trends in the number of photos taken across different months and years. Ultimately, my primary motivation rooted from the fact that I find colors interesting. This project allowed me to explore this interest while gaining insights into my photo gallery and photography habits.</p>
               
                   <h3>Data Set</h3>
                   <p>I used <strong>my photo gallery</strong> as my dataset. I got the photos from my <a href="https://photos.google.com/" target="_blank">Google Photos</a> account. I also got some of them directly from my phone's memory.</p>
               
                   <h3>Data Pre-Processing</h3>
-                  <p>First I manually categorized the photos by the year and month they were taken. I also disregarded screenshots due to their mostly white color affecting the results. Then I wrote a python script to get when each photo was taken by processing each photo's JSON files that Google Takeout provides alongside the photos themselves. I also manually wrote down each year's each month's photo count in a word document.</p>
+                  <p>First I manually categorized the photos by the year and month they were taken. I also disregarded screenshots due to their mostly white color affecting the results. Then I wrote a Python script to get when each photo was taken by processing each photo's JSON files that Google Takeout provides alongside the photos themselves. I also manually wrote down each year's each month's photo count in a Word document.</p>
              
                   <h3>Data Processing</h3>
                   <h4>Dominant Color Analysis</h4>
-                  <p>I used kMeans clustering to get each photo's 5 most dominant colors. I decided the k value by checking different ones and comparing the results. Then after I processed each month, I merged similar colors by setting a threshold between the RGB distances of two colors, and if they are closer than said threshold, I combined them. I also decided on the threshold after running the program with different ones and seeing their accuracy. I used a smaller batch of photos to test my program's accuracy visually also. I had over 16,000 photos so I used threads to speed up the process of extracting colors. I also resized images for the same reason. After processing each month, I got the top 10 most common colors and created a CSV file to store the values. I also stored all years combined data in a JSON file for visualization. I tried using adaptive pallettes and MiniBatchKMeans for dominant color eaxtraction before fully deciding on K meand due to KMeans being much more accurate than both of them.</p>
+                  <p>I used kMeans clustering to get each photo's 5 most dominant colors. I decided the k value by checking different ones and comparing the results. Then after I processed each month, I merged similar colors by setting a threshold between the RGB distances of two colors, and if they are closer than said threshold, I combined them. I also decided on the threshold after running the program with different ones and seeing their accuracy. I used a smaller batch of photos to test my program's accuracy visually also. I had over 16,000 photos so I used threads to speed up the process of extracting colors. I also resized images for the same reason. After processing each month, I got the top 10 most common colors and created a CSV file to store the values. I also stored all years combined data in a JSON file for visualization. I tried using adaptive pallettes and MiniBatchKMeans for dominant color extraction before fully deciding on KMeans clustering due to KMeans being much more accurate than both of them.</p>
           
                   <h4>Photo Taken Time</h4>
-                  <p>Since I directly got the photo's times from Google, I just collected the data in a JSON file. I checked for the most common hour I took by turning Unix time to standard time and also adding a timezone to be accurate with time.</p>
+                  <p>Since I directly got the photo's times from Google, I just collected the data in a JSON file. I checked for the most common hour I took by turning Unix time to standard time and also adding a timezone to be accurate.</p>
                   
                   <h4>Photo Count</h4>
-                  <p>I created a csv file in excel that contained photo count data of all the years and sorted by the months. I used the word document as the data and calculated the average photo per month of each year manually.</p>
+                  <p>I created a CSV file in Excel that contained photo count data of all the years and sorted by the months. I used the Word document as the data and calculated the average photo per month of each year manually.</p>
                   
                   <h3>Data Visualization</h3>
                   <h4>Dominant Color Analysis</h4>
-                  <p>For visualization of each year's top 10 most common colors, I got each CSV file related to each year and combined every month of that year. Then I used the above-mentioned method of merging colors and merged them. I used Altair to visualize an interactive  <a href="#pie">pie chart </a>to show the count of each color and their RGB. I visualized <a href="#project">a bar chart</a> to see how each month changed through the years and the count of each color. I also did the reverse and looked at each year's months as <a href="#project2">a bar chart</a>. I first tried using Plotly first instead of Altair but I coudn't manage to embed Plotly graphs as HTML file into this website.</a>.</p>
+                  <p>For visualization of each year's top 10 most common colors, I got each CSV file related to each year and combined every month of that year. Then I used the above-mentioned method of merging colors. I used Altair to visualize an interactive  <a href="#pie">pie chart </a>to show the count of each color and their RGB. I visualized <a href="#project">a bar chart</a> to see how each month changed through the years and the count of each color. I also did the reverse and looked at each year's months as <a href="#project2">a bar chart</a>. I first tried using Plotly instead of Altair but I coudn't manage to embed Plotly graphs as HTML file into this website.</p>
           
                   <h4>Photo Taken Time</h4>
                   <p>I created <a href="#resume">a scatter plot</a> to show the hours each photo was taken in each month, using Altair to plot it. I also looked at each year individually by creating a dropdown menu.</p>
@@ -460,14 +460,19 @@ https://www.tooplate.com/view/2115-marvel
                  <h3>Findings</h3>
                   
                  <h4>Dominant Color Analysis</h4>
-                  <p>The most common color in all of my 16000 photos is brown which is understandible since almost every month had some shade of brown in it.
-                  I didn't anticipated every year having its own color pallete, it was suprising. There were couple unique colors in every year:</p>
-                  <ul><li>Pink in: 2016</li><li>Blues in: 2019</li><li>Greens in: 2022</li> </ul>
-                  <p>2020 had it's own color pallette. It's colors were mostly due to the month of March which is the month I had a trip to Europe and I took a bunch of photos.</p>
-                  <p>As for any trend regarding season I coudn't observe any exceppt the month of May having 3 years with very green color pallettes: 2017, 2018 and 2022. There was also some greens in 2021 as well.
+                  <p>The most common color in all of my 16000 photos is brown which is understandable since almost every month had some shade of brown in it.
+                  I didn't anticipate every year having its own color pallete, it was suprising. There were couple unique colors in most years, some examples:</p>
+                  <ul>
+                    <li>2016: Pink</li>
+                    <li>2019: Blue</li>
+                    <li>2022: Green</li> 
+                  </ul>
+                  <p></p>
+                  <p>2020 had a quite different color pallette. It's colors were mostly due to the month of March which is the month I had a trip to Europe and I took a lot of photos.</p>
+                  <p>As for any trend regarding season I couldn't observe any except the month of May having 3 years with very green color pallettes: 2017, 2018 and 2022. There was also some greens in 2021 as well.
                   2021's January was an outlier compared to other months in 2021 which is the result of taking over 20 photos for my birthday celebration.</p>
                   <p>There were a lot of greens and blues all through the months and years which was kind of expected with the amount of nature and sky photos I like to take.
-                  Comparing the bar charts with the photos themselves led me to realise the sheer amount of repetitive photos I take of things and how they effect the color results.</p>
+                  Comparing the bar charts with the photos themselves led me to realize the sheer amount of repetitive photos I take of things and how they effect the color results.</p>
                   <a href="#resume"><h4>Photo Taken Time</h4></a>
                  <p>I discovered that I prefer taking photos at night, as the five most common hours for photo-taking were:</p>
                  <ul>
@@ -477,16 +482,16 @@ https://www.tooplate.com/view/2115-marvel
                   <li>17:00 with 1130 occurrences.</li>
                   <li>16:00 with 1098 occurrences.</li>
                   </ul>
-                  <p>In both 2020 and 2024, there was an increase in photos taken late at night (between 12 AM and 4 AM) from April to July. Looking at my photos in 2020, this was likely due to COVID affecting my sleep schedule, while in 2024, it was probably because of midterm exam preparation, as I tend to study late into the night.</p>
+                  <p></p>
+                  <p>In 2020 and 2024, there was an increase in photos taken late at night (between 12 AM and 4 AM) from April to July. Looking at my photos in 2020, this was likely due to COVID affecting my sleep schedule, while in 2024, it was probably because of midterm exam preparation, as I tend to study late into the night.</p>
                   <a href="#resume2"><h4>Photo Count</h4></a>
                   <p>I also found out that the number of photos I took significantly decreased around the start of COVID (end of 2020) and continued to be low during the university exam period (2022-2023). They slowly got back to how they were especially with starting the university (September 2023). The outlier month regarding the photo count was March 2020 since I took a trip to Europe that month and took in total 1006 photos in a month.</p>
-                 
-                
                   </section>
                   <h3>Limitations</h3>
-                  <p>I couldn't get the 2022 photos' taken times so there is a gap in understanding the photo-taking habits. I would've liked to get the location of these photos to create a map with it but I coudn't get this data. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data to find more observations can be done as well.</p>
+                  <p>I couldn't get the 2022 photos' taken times so there is a gap in understanding the photo-taking habits. I would've liked to get the location of these photos to create a map with it but I couldn't get this data. Also, the dominant color extraction can be more precise by using an elbow method or silhouette to find the optimal k value but with fewer photos probably. Doing more analysis and visualization of the data to find more observations can be done as well.</p>
+                  
                   <h3>Future Plans</h3>
-                  <p>I plan to work on this project to improve the website and do more analysis of the results.</p>
+                  <p>I plan to work on this project to improve the website and do more data exploration and analysis of the results.</p>
 
 
         </div>
